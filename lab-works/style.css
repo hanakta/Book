@@ -56,3 +56,33 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* листы */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding-left: 4ch;
+}
+li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: green;
+}
+
+img {
+    max-width: 450px;
+    margin-left: 200px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0; /* Отступы между элементами */
+    margin-left: 20px;
+}
+input[type="checkbox"] {
+    margin-right: 8px; /* Отступ между чекбоксом и текстом */
+}
