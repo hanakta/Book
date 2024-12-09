@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раздел 4</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b79a1, #283e51);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e9ecef;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+            text-align: center;
+        }
+
+        nav ul li:hover::before {
+            transform: scale(1.05);
+        }
+
+        nav ul li a:hover {
+            background-color: #d1d1d1;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #4b79a1;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 5px solid #283e51;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #cfd8dc;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #4b79a1;
+            text-align: center;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav ul {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul li a {
+                font-size: 1.1rem;
+                padding: 15px;
+                min-height: 100px;
+            }
+
+            .extra-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Раздел 4: Представление данных</h1>
+    </header>
+    <!-- <li><a href="tema2.html">Тема 2: Лабораторно-практическая работа №3: Системы счисления</a></li>
+            <li><a href="tema3.html">Тема 3: Лабораторно-практическая работа №4: Кодирование информаций</a></li>
+            <li><a href="tema4.html">Тема 4: Лабораторно-практическая работа №5: Логические операций</a></li> -->
+    <div class="content">
+        <div class="description">
+            Владеть навыками преобразования чисел в различных системах счисления, создания логических схем и выражений
+        </div>
+        <nav>
+            <ul>
+                <li><a href="temesrazdel4/tema1.html">Системы счисления</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <p><a href="index.html">Назад на главную</a></p>
+        <p><a href="razdel5.html">Следующий</a></p>
+    </footer>
+</body>
+
+</html>

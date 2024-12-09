@@ -1,0 +1,136 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d8e3e7, #f1f5f9);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: #b0bec5;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px solid #90a4ae;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Навигация */
+nav {
+    margin: 20px 0;
+    background-color: #eceff1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #546e7a;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 12px 0;
+    border-radius: 5px;
+    background: #cfd8dc;
+    transition: background 0.3s, color 0.3s;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #90a4ae;
+    color: #fff;
+}
+
+/* Раздел для глоссария и лабораторных работ */
+.extra-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.extra-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.extra-section ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.extra-section ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #eceff1;
+    transition: background-color 0.3s, color 0.3s;
+    color: #546e7a;
+    border: 1px solid #b0bec5;
+}
+
+.extra-section ul li a:hover {
+    background-color: #90a4ae;
+    color: #fff;
+}
+
+/* Футер */
+footer {
+    background-color: #b0bec5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #90a4ae;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+
+    .extra-section h2 {
+        font-size: 1.8rem;
+    }
+}
